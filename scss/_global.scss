@@ -1,0 +1,85 @@
+@import url(//db.onlinewebfonts.com/c/d45c80def0773883403215fd11b988d3?family=StoneSoupNFW01-Regular);
+
+
+@font-face {
+	font-family: 'TTLakesNeueExt-Regular';
+	src: local('TTLakesNeueExt-Regular'),
+		url('../font/TTLakesNeueExt-Regular.woff2') format('woff2'),
+		url('../font/TTLakesNeueExt-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: $fontFamilyMain;
+	font-weight: 100;
+	font-size: 20px;
+	line-height: 28px;
+	color: $whiteColor;
+	overflow-x: hidden;
+	min-width: 320px;
+	background-color: black;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	position: relative;
+
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+.container {
+	max-width: 1150px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+.show {
+	transform: translateY(-200%) !important;
+}
+
+.slick-active {
+	background: linear-gradient(180deg, rgba(1, 55, 66, 0.4) 0%, rgba(7, 126, 76, 0.4) 100%);
+
+	& .slide__descr {
+		color: #FFFFFF;
+	}
+
+	& svg path {
+		fill: $mainColor;
+	}
+}
+
+body::-webkit-scrollbar {
+	width: 12px;
+}
+
+
+
+// body::-webkit-scrollbar-track {
+// 	background: orange;
+// 	/* цвет зоны отслеживания */
+// }
+
+body::-webkit-scrollbar-thumb {
+	/* цвет бегунка */
+	border-radius: 20px;
+	/* округлось бегунка */
+	border: 3px solid #FFFFFF;
+	/* отступ вокруг бегунка */
+}

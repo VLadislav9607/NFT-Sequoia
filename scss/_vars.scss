@@ -1,0 +1,67 @@
+$mainColor: #C2E978;
+$whiteColor: #e5e2e2;
+$fontFamilyMain: 'TTLakesNeue-Regular', sans-serif;
+$fontFamilySecond: 'StoneSoupNFW01-Regular', sans-serif;
+
+@mixin _1100 {
+   @media (max-width: 1130px) {
+      @content
+   }
+}
+
+@mixin _995 {
+   @media (max-width: 995px) {
+      @content
+   }
+}
+
+@mixin _870 {
+   @media (max-width: 870px) {
+      @content
+   }
+}
+
+@mixin _780 {
+   @media (max-width: 780px) {
+      @content
+   }
+}
+
+@mixin _700 {
+   @media (max-width: 700px) {
+      @content
+   }
+}
+
+@mixin _565 {
+   @media (max-width: 565px) {
+      @content
+   }
+}
+
+@mixin _412 {
+   @media (max-width: 412px) {
+      @content
+   }
+}
+
+.title__bem {
+   font-family: $fontFamilySecond;
+   font-weight: 100;
+   font-size: 48px;
+   line-height: 46px;
+   text-align: center;
+   letter-spacing: 0.05em;
+   color: #FFFFFF;
+
+   @include _565 {
+      font-size: 36px;
+      line-height: 40px;
+   }
+}
+
+.button__bem {
+   background-color: $mainColor;
+   border-radius: 10px;
+   color: #08162B;
+}
