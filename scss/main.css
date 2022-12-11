@@ -200,7 +200,7 @@ body::-webkit-scrollbar-thumb {
       transition: top 0.2s linear, transform 0.2s ease-in 0.2s; }
 
 .nav__mobile {
-  transform: translateY(200%);
+  transform: translateY(-200%);
   position: absolute;
   right: 0;
   top: 0;
