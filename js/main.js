@@ -1,22 +1,15 @@
-// 'use strict';
+
+const buttonMobile = document.querySelector('.button__mobile'),
+   buttonMobileActive = document.querySelector('.button__mobile-icon'),
+   navMobile = document.querySelector('.nav__mobile');
+
+buttonMobile.addEventListener('click', () => {
+   buttonMobileActive.classList.toggle('button-active');
+   navMobile.classList.toggle('show__slide');
+
+});
 
 
-// const buttonMobile = document.querySelector('.button__mobile');
-// const buttonMobileActive = document.querySelector('.button__mobile-icon');
-// const navMobile = document.querySelector('.nav__mobile');
-
-
-// buttonMobile.addEventListener('click', () => {
-//    buttonMobileActive.classList.toggle('button-active');
-//    navMobile.classList.toggle('show__slide');
-
-// });
-
-
-
-
-// const buttonPrev = document.querySelector('.slider_arrow-prev'),
-//    buttonNext = document.querySelector('.slider_arrow-next');
 
 
 
