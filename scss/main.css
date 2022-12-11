@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(//db.onlinewebfonts.com/c/d45c80def0773883403215fd11b988d3?family=StoneSoupNFW01-Regular);
 html {
   box-sizing: border-box; }
 
@@ -54,7 +53,7 @@ button {
   cursor: pointer; }
 
 .title__bem {
-  font-family: "Birthstone", sans-serif;
+  font-family: "Stone Soup NF W01 Regular", sans-serif;
   font-weight: 100;
   font-size: 48px;
   line-height: 46px;
@@ -74,6 +73,11 @@ button {
 @font-face {
   font-family: 'TTLakesNeueExt-Regular';
   src: local("TTLakesNeueExt-Regular"), url("../font/TTLakesNeueExt-Regular.woff2") format("woff2"), url("../font/TTLakesNeueExt-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Stone Soup NF W01 Regular';
+  src: local("Stone Soup NF W01 Regular"), url("../font/d45c80def0773883403215fd11b988d3.woff2") format("woff2"), url("../font/d45c80def0773883403215fd11b988d3.woff") format("woff");
   font-weight: 400;
   font-style: normal; }
 html,
@@ -241,7 +245,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   padding: 0px 30px; }
   .welcome__content__title {
-    font-family: "Birthstone", sans-serif;
+    font-family: "Stone Soup NF W01 Regular", sans-serif;
     font-size: 32px;
     font-weight: 100;
     line-height: 39px;
@@ -280,7 +284,7 @@ body::-webkit-scrollbar-thumb {
       width: 71px;
       height: 55px; }
   .welcome__content__subtitle {
-    font-family: "Birthstone", sans-serif;
+    font-family: "Stone Soup NF W01 Regular", sans-serif;
     font-weight: 100;
     font-size: 32px;
     line-height: 39px;
@@ -338,7 +342,7 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 5px;
     max-width: 210px; }
   .sequoia__info__title {
-    font-family: "Birthstone", sans-serif;
+    font-family: "Stone Soup NF W01 Regular", sans-serif;
     font-size: 53px;
     font-weight: 100;
     line-height: 53px;
@@ -386,7 +390,7 @@ body::-webkit-scrollbar-thumb {
     margin-left: auto; }
 
 .sequoia__content__title {
-  font-family: "Birthstone", sans-serif;
+  font-family: "Stone Soup NF W01 Regular", sans-serif;
   font-weight: 100;
   font-size: 40px;
   line-height: 46px;
@@ -404,7 +408,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #191D2E;
   color: #e5e2e2; }
   .sequoia__content .sequoia__item__title {
-    font-family: "Birthstone", sans-serif;
+    font-family: "Stone Soup NF W01 Regular", sans-serif;
     font-weight: 100;
     font-size: 32px;
     line-height: 40px;
@@ -448,7 +452,7 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 26px; }
   .calc__top__title {
     max-width: 512px;
-    font-family: "Birthstone", sans-serif;
+    font-family: "Stone Soup NF W01 Regular", sans-serif;
     font-weight: 100;
     font-size: 40px;
     line-height: 46px;
@@ -467,7 +471,7 @@ body::-webkit-scrollbar-thumb {
       bottom: 12px;
       right: 1px; }
   .calc__top__formula .formula__title {
-    font-family: "Birthstone", sans-serif;
+    font-family: "Stone Soup NF W01 Regular", sans-serif;
     font-weight: 100;
     font-size: 27.4709px;
     line-height: 27px;
@@ -597,7 +601,7 @@ body::-webkit-scrollbar-thumb {
 .airdrop {
   margin-bottom: 80px; }
   .airdrop__title {
-    font-family: "Birthstone", sans-serif;
+    font-family: "Stone Soup NF W01 Regular", sans-serif;
     font-weight: 100;
     font-size: 64px;
     line-height: 46px;
@@ -659,7 +663,7 @@ body::-webkit-scrollbar-thumb {
         top: 9px;
         left: 103px; }
       .airdrop__items .airdrop__item__img--green + .airdrop__item__text {
-        font-family: "Birthstone", sans-serif;
+        font-family: "Stone Soup NF W01 Regular", sans-serif;
         font-weight: 100;
         font-size: 24px;
         line-height: 29px;
@@ -687,7 +691,7 @@ body::-webkit-scrollbar-thumb {
         top: 14px;
         left: 114px; }
       .airdrop__items .airdrop__item__img--orange + .airdrop__item__text {
-        font-family: "Birthstone", sans-serif;
+        font-family: "Stone Soup NF W01 Regular", sans-serif;
         font-weight: 100;
         font-size: 32px;
         line-height: 39px;
@@ -715,7 +719,7 @@ body::-webkit-scrollbar-thumb {
         top: 22px;
         left: 115px; }
       .airdrop__items .airdrop__item__img--pink + .airdrop__item__text {
-        font-family: "Birthstone", sans-serif;
+        font-family: "Stone Soup NF W01 Regular", sans-serif;
         font-weight: 100;
         font-size: 40px;
         line-height: 49px; }
@@ -735,7 +739,7 @@ body::-webkit-scrollbar-thumb {
         left: 50%;
         transform: translate(-50%, -50%); }
       .airdrop__items .airdrop__item__img--white + .airdrop__item__text {
-        font-family: "Birthstone", sans-serif;
+        font-family: "Stone Soup NF W01 Regular", sans-serif;
         font-weight: 100;
         font-size: 24px;
         line-height: 29px;
@@ -863,7 +867,7 @@ body::-webkit-scrollbar-thumb {
 .team {
   margin-bottom: 80px; }
   .team__title {
-    font-family: "Birthstone", sans-serif;
+    font-family: "Stone Soup NF W01 Regular", sans-serif;
     font-weight: 100;
     font-size: 72px;
     line-height: 46px;
@@ -892,7 +896,7 @@ body::-webkit-scrollbar-thumb {
   .team__item__img {
     margin: 0px auto 20px auto; }
   .team__item__name {
-    font-family: "Birthstone", sans-serif;
+    font-family: "Stone Soup NF W01 Regular", sans-serif;
     font-weight: 100;
     font-size: 32px;
     line-height: 28px;
@@ -946,7 +950,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     column-gap: 64px; }
   .footer__copy {
-    font-family: "Birthstone", sans-serif;
+    font-family: "Stone Soup NF W01 Regular", sans-serif;
     font-size: 17px;
     line-height: 21px;
     letter-spacing: 0.05em;
