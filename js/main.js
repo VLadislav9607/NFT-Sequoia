@@ -5,7 +5,7 @@ const buttonMobile = document.querySelector('.button__mobile'),
 
 buttonMobile.addEventListener('click', () => {
    buttonMobileActive.classList.toggle('button-active');
-   navMobile.classList.toggle('show__slide');
+   navMobile.classList.toggle('show');
 
 });
 
