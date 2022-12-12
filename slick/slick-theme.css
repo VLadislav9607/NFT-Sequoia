@@ -19,8 +19,8 @@
 .slick-next {
   position: absolute;
   display: block;
-  height: 49px;
-  width: 30px;
+  height: 40px;
+  width: 43px;
   line-height: 0px;
   font-size: 0px;
   cursor: pointer;
@@ -41,7 +41,7 @@
 .slick-prev:before,
 .slick-next:before {
   font-family: "slick";
-  font-size: 67px;
+  font-size: 56px;
   color: #076211;
   opacity: 1;
   line-height: 1;
