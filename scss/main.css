@@ -792,7 +792,7 @@ body::-webkit-scrollbar-thumb {
   padding-top: 74px;
   margin-bottom: 107px; }
   .roadmap .container {
-    padding: 0px 45px; }
+    padding: 0px 20px; }
   .roadmap::after {
     content: '';
     position: absolute;
