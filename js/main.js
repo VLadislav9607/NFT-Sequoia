@@ -17,7 +17,7 @@ $('.roadmap__slider').slick({
    infinite: true,
    slidesToShow: 4,
    slidesToScroll: 4,
-   arrows: false,
+   arrows: true,
    dots: true,
    responsive: [
       {
@@ -26,7 +26,6 @@ $('.roadmap__slider').slick({
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            dots: true
          }
       },
       {
@@ -37,7 +36,7 @@ $('.roadmap__slider').slick({
          }
       },
       {
-         breakpoint: 480,
+         breakpoint: 624,
          settings: {
             dots: false,
             slidesToShow: 1,

@@ -68,7 +68,13 @@ button {
 .button__bem {
   background-color: #C2E978;
   border-radius: 10px;
-  color: #08162B; }
+  color: #08162B;
+  box-shadow: 0px 7px 0px #4f7705;
+  transition: all 0.2s ease-in-out; }
+  .button__bem:hover {
+    transform: translateY(2px);
+    box-shadow: 0px 5px 0px #4f7705;
+    transition: all 0.2s ease-in-out; }
 
 @font-face {
   font-family: 'TTLakesNeueExt-Regular';
@@ -93,18 +99,6 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   background-color: black; }
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  position: relative; }
-
-.main {
-  flex: 1 0 auto; }
-
-.footer {
-  flex: 0 0 auto; }
 
 .container {
   max-width: 1150px;
@@ -132,7 +126,9 @@ body::-webkit-scrollbar-thumb {
   /* отступ вокруг бегунка */ }
 
 .header {
-  background: linear-gradient(180deg, #000000 45.56%, rgba(0, 0, 0, 0.8) 56.45%, rgba(0, 0, 0, 0.6) 67.34%, rgba(0, 0, 0, 0.4) 78.23%, rgba(0, 0, 0, 0.2) 89.11%, rgba(0, 0, 0, 0) 100%); }
+  background: linear-gradient(180deg, #000000 45.56%, rgba(0, 0, 0, 0.8) 56.45%, rgba(0, 0, 0, 0.6) 67.34%, rgba(0, 0, 0, 0.4) 78.23%, rgba(0, 0, 0, 0.2) 89.11%, rgba(0, 0, 0, 0) 100%);
+  position: relative;
+  z-index: 2; }
   .header__inner {
     max-width: 1302px;
     margin: 0 auto;
@@ -141,6 +137,11 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     column-gap: 24px;
     padding: 40px 15px 70px; }
+    .header__inner .header__logo path:nth-child(2) {
+      transition: all 0.5s ease-in-out; }
+      .header__inner .header__logo path:nth-child(2):hover {
+        transition: all 0.2s ease-in-out;
+        fill: #C2E978; }
 
 .nav {
   margin-right: auto; }
@@ -150,11 +151,21 @@ body::-webkit-scrollbar-thumb {
     .nav__list__link {
       font-size: 17px;
       line-height: 20px;
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      transition: all 0.2s ease-in-out;
+      display: inline-block; }
+      .nav__list__link:hover {
+        transform: translateY(-2px);
+        color: #C2E978; }
 
 .header__social {
   display: flex;
   column-gap: 32px; }
+  .header__social__link img {
+    transition: transform 0.3s ease-in-out; }
+    .header__social__link img:hover {
+      transform: scale(1.3);
+      transition: transform 0.2s ease-in-out; }
 
 .button__mobile {
   display: none;
@@ -170,24 +181,17 @@ body::-webkit-scrollbar-thumb {
     width: 30px;
     height: 5px;
     background-color: #fff; }
-    .button__mobile-icon::after {
+    .button__mobile-icon::after, .button__mobile-icon::before {
+      content: '';
       position: absolute;
       left: 0;
       top: 10px;
-      content: '';
       width: 30px;
       height: 5px;
       background-color: #fff;
-      transition: transform 0.2s ease-in, top 0.2s linear 0.2s; }
+      transition: transform 0.2s ease-in-out, top 0.2s linear 0.2s; }
     .button__mobile-icon::before {
-      position: absolute;
-      left: 0;
-      top: -10px;
-      content: '';
-      width: 30px;
-      height: 5px;
-      background-color: #fff;
-      transition: transform 0.2s ease-in, top 0.2s linear 0.2s; }
+      top: -10px; }
   .button__mobile .button-active {
     background-color: transparent; }
     .button__mobile .button-active::after {
@@ -206,7 +210,7 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   min-height: 100vh;
   width: 35vh;
-  padding: 80px 15px 15px 40px;
+  padding: 80px 15px 15px 80px;
   z-index: 5;
   background-color: #0b0b0b;
   transition: transform 0.2s ease-in;
@@ -225,8 +229,7 @@ body::-webkit-scrollbar-thumb {
   padding: 146px 0px 98px;
   margin-top: -152px;
   background: url(../img/welcome/main__bg.jpg) center center/cover no-repeat;
-  position: relative;
-  z-index: -1; }
+  position: relative; }
   .welcome::after {
     content: '';
     position: absolute;
@@ -266,7 +269,16 @@ body::-webkit-scrollbar-thumb {
     position: relative; }
     .welcome__content__title-main svg {
       max-width: 100%;
-      min-width: 290px; }
+      min-width: 290px;
+      overflow: visible; }
+      .welcome__content__title-main svg .word-O {
+        animation-name: animation__transform-Y;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        fill: #C2E978; }
+        .welcome__content__title-main svg .word-O path {
+          fill: #C2E978; }
     .welcome__content__title-main::after {
       content: '';
       position: absolute;
@@ -333,7 +345,11 @@ body::-webkit-scrollbar-thumb {
     width: 356px;
     height: 584px;
     top: -24%;
-    left: 37%; }
+    left: 37%;
+    animation-name: animation__transform-Y;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
 
 .sequoia__info {
   text-align: left; }
@@ -348,7 +364,7 @@ body::-webkit-scrollbar-thumb {
     line-height: 53px;
     letter-spacing: 0.05em;
     color: #C2E978;
-    max-width: 300px; }
+    max-width: 320px; }
     .sequoia__info__title::after {
       content: '';
       position: absolute;
@@ -365,7 +381,7 @@ body::-webkit-scrollbar-thumb {
     content: '';
     position: absolute;
     background: url(../img/sequoia/Right\ arrow.svg) no-repeat;
-    width: 23px;
+    width: 25px;
     height: 93px;
     top: 51px;
     right: -32px; }
@@ -535,7 +551,7 @@ body::-webkit-scrollbar-thumb {
       position: relative; }
 
 .classic {
-  margin-bottom: 149px; }
+  margin-bottom: 90px; }
   .classic__subtitle {
     display: block;
     font-weight: 100;
@@ -775,6 +791,8 @@ body::-webkit-scrollbar-thumb {
 .roadmap {
   padding-top: 74px;
   margin-bottom: 107px; }
+  .roadmap .container {
+    padding: 0px 45px; }
   .roadmap::after {
     content: '';
     position: absolute;
@@ -796,33 +814,6 @@ body::-webkit-scrollbar-thumb {
       height: 13px;
       top: -7px;
       left: -20px; }
-  .roadmap .container_right {
-    position: relative; }
-  .roadmap .slider_arrow-prev {
-    width: 50px;
-    height: 50px;
-    background-color: #C2E978;
-    border-radius: 34px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 99;
-    position: absolute;
-    left: 144px;
-    top: 50%; }
-  .roadmap .slider_arrow-next {
-    width: 50px;
-    height: 50px;
-    background-color: #C2E978;
-    border-radius: 34px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 5;
-    position: absolute;
-    right: 170px;
-    top: 50%;
-    transform: translate(50%, -50%); }
 
 .roadmap__slider .slick-track {
   display: flex;
@@ -837,6 +828,18 @@ body::-webkit-scrollbar-thumb {
   color: #7E839A; }
   .roadmap__slider .slide__icon {
     margin-bottom: 12px; }
+.roadmap__slider .slick-slider .slick-prev,
+.roadmap__slider .slick-slider .slick-next {
+  height: 46px;
+  width: 30px;
+  background: white;
+  top: 50%;
+  border-radius: 100%; }
+  .roadmap__slider .slick-slider .slick-prev::before,
+  .roadmap__slider .slick-slider .slick-next::before {
+    font-size: 60px;
+    color: white;
+    opacity: 1; }
 .roadmap__slider .slick-dots {
   display: flex;
   justify-content: center;
@@ -944,11 +947,19 @@ body::-webkit-scrollbar-thumb {
     bottom: -113px;
     left: 31%;
     width: 362px;
-    height: 431px; }
+    height: 431px;
+    animation-name: animation__rotate-img;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; }
   .footer__social {
     display: flex;
     align-items: center;
     column-gap: 64px; }
+    .footer__social__link img {
+      transition: transform 0.3s ease-in; }
+      .footer__social__link img:hover {
+        transform: scale(1.3);
+        transition: transform 0.3s ease-in; }
   .footer__copy {
     font-family: "Stone Soup NF W01 Regular", sans-serif;
     font-size: 17px;
@@ -968,6 +979,23 @@ body::-webkit-scrollbar-thumb {
       width: 53px;
       height: 60px; }
 
+@keyframes animation__transform-Y {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(-10px); }
+  100% {
+    transform: translateY(5px); } }
+@keyframes animation__rotate-img {
+  0% {
+    transform: rotate(0deg);
+    bottom: -113px; }
+  50% {
+    transform: rotate(-8deg);
+    bottom: -100px; }
+  100% {
+    transform: rotate(0deg);
+    bottom: -113px; } }
 @media (max-width: 565px) {
   .header__inner {
     padding: 20px 15px; } }
@@ -1050,15 +1078,32 @@ body::-webkit-scrollbar-thumb {
   .sequoia__body {
     padding: 40px 50px; }
     .sequoia__body__img {
-      display: none; } }
+      width: 327px;
+      height: 494px;
+      top: -31%; } }
+@media (max-width: 870px) {
+  .sequoia__body__img {
+    width: 271px;
+    height: 462px;
+    top: -23%;
+    left: 34%; } }
 @media (max-width: 780px) {
   .sequoia__body {
     flex-direction: column;
-    margin-bottom: 25px; } }
+    margin-bottom: 25px; }
+    .sequoia__body__img {
+      display: none; } }
 @media (max-width: 565px) {
   .sequoia__body {
     padding: 20px 15px; } }
 
+@media (max-width: 995px) {
+  .sequoia__info__title {
+    font-size: 48px;
+    line-height: 45px; }
+    .sequoia__info__title::after {
+      top: 39px;
+      left: 6px; } }
 @media (max-width: 780px) {
   .sequoia__info {
     margin-bottom: 20px; }
@@ -1069,7 +1114,7 @@ body::-webkit-scrollbar-thumb {
     .sequoia__info__title {
       font-size: 30px;
       line-height: 20px;
-      max-width: 100%; }
+      margin: 0 auto; }
       .sequoia__info__title::after {
         display: none; } }
 @media (max-width: 565px) {
@@ -1242,7 +1287,8 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 700px) {
   .classic__items {
-    flex-direction: column; } }
+    flex-direction: column;
+    padding: 0px 40px; } }
 @media (max-width: 412px) {
   .classic__items {
     margin-bottom: 11px; } }
@@ -1314,10 +1360,12 @@ body::-webkit-scrollbar-thumb {
   .roadmap {
     padding-top: 0; } }
 @media (max-width: 565px) {
-  .roadmap__title {
-    font-size: 42px; } }
+  .roadmap {
+    margin-bottom: 76px; }
+    .roadmap__title {
+      font-size: 42px; } }
 
-@media (max-width: 700px) {
+@media (max-width: 995px) {
   .roadmap__slider .slide {
     padding: 20px 15px;
     background-color: #191D2E;
@@ -1325,6 +1373,17 @@ body::-webkit-scrollbar-thumb {
     .roadmap__slider .slide__icon {
       margin-bottom: 12px; } }
 @media (max-width: 565px) {
+  .roadmap__slider .slide {
+    padding: 32px 20px 30px 24px; }
+    .roadmap__slider .slide__icon {
+      margin-bottom: 12px; }
+  .roadmap__slider .slick-dots {
+    column-gap: 20px; } }
+@media (max-width: 412px) {
+  .roadmap__slider .slide {
+    padding: 15px 20px; }
+    .roadmap__slider .slide__icon {
+      margin-bottom: 12px; }
   .roadmap__slider .slick-dots {
     column-gap: 20px; } }
 

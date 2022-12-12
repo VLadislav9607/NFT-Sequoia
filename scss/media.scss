@@ -160,13 +160,30 @@
       padding: 40px 50px;
 
       &__img {
-         display: none;
+         width: 327px;
+         height: 494px;
+         top: -31%;
       }
+   }
+
+   @include _870 {
+      &__img {
+         width: 271px;
+         height: 462px;
+         top: -23%;
+         left: 34%;
+      }
+
    }
 
    @include _780 {
       flex-direction: column;
       margin-bottom: 25px;
+
+      &__img {
+         display: none;
+
+      }
 
    }
 
@@ -177,6 +194,20 @@
 }
 
 .sequoia__info {
+
+   @include _995 {
+
+      &__title {
+         font-size: 48px;
+         line-height: 45px;
+
+         &::after {
+            top: 39px;
+            left: 6px;
+         }
+      }
+   }
+
    @include _780 {
       margin-bottom: 20px;
 
@@ -189,7 +220,8 @@
       &__title {
          font-size: 30px;
          line-height: 20px;
-         max-width: 100%;
+         margin: 0 auto;
+         
 
          &::after {
             display: none;
@@ -517,6 +549,8 @@
 
    @include _700 {
       flex-direction: column;
+      padding: 0px 40px;
+
    }
 
    @include _412 {
@@ -563,17 +597,13 @@
             &+.airdrop__item__text {
                font-size: 32px;
             }
-
          }
-
-
 
          &__img--orange {
 
             &::before {
                display: none;
             }
-
          }
 
          &__img--pink {
@@ -586,7 +616,6 @@
                font-size: 32px;
                line-height: 12px;
             }
-
          }
 
          &__img--white {
@@ -601,6 +630,7 @@
    @include _565 {
       grid-template-columns: repeat(1, 1fr);
       gap: 70px 0px;
+
 
       & .airdrop__item:nth-child(4),
       .airdrop__item:nth-child(2),
@@ -682,6 +712,8 @@
    }
 
    @include _565 {
+      margin-bottom: 76px;
+
       &__title {
          font-size: 42px;
       }
@@ -694,7 +726,7 @@
 
 .roadmap__slider {
 
-   @include _700 {
+   @include _995 {
       .slide {
          padding: 20px 15px;
          background-color: #191D2E;
@@ -707,6 +739,29 @@
    }
 
    @include _565 {
+
+      .slide {
+         padding: 32px 20px 30px 24px;
+
+         &__icon {
+            margin-bottom: 12px;
+         }
+      }
+
+      & .slick-dots {
+         column-gap: 20px;
+      }
+   }
+
+   @include _412 {
+
+      .slide {
+         padding: 15px 20px;
+
+         &__icon {
+            margin-bottom: 12px;
+         }
+      }
 
       & .slick-dots {
          column-gap: 20px;
@@ -802,7 +857,7 @@
          &:after {
             display: none;
          }
-   
+
       }
    }
 
