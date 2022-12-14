@@ -41,8 +41,12 @@ body {
 
 
 .show {
-	transform: translateY(0%) !important;
+	transform: translate(0%) !important;
+	opacity: 1 !important;
+
 }
+
+
 
 .slick-active {
 	background: linear-gradient(180deg, rgba(1, 55, 66, 0.4) 0%, rgba(7, 126, 76, 0.4) 100%);

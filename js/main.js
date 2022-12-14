@@ -10,9 +10,6 @@ buttonMobile.addEventListener('click', () => {
 });
 
 
-
-
-
 $('.roadmap__slider').slick({
    infinite: true,
    slidesToShow: 4,
@@ -38,10 +35,52 @@ $('.roadmap__slider').slick({
       {
          breakpoint: 624,
          settings: {
-            dots: false,
+            arrows: false,
             slidesToShow: 1,
             slidesToScroll: 1
          }
       }
    ]
 });
+
+
+const animationElements = document.querySelectorAll('._anim__el');
+
+if (animationElements.length > 0) {
+
+   animateByScroll();
+
+   window.addEventListener('scroll', animateByScroll);
+
+
+}
+
+function animateByScroll() {
+   animationElements.forEach(element => {
+      const elementHeight = element.clientHeight;
+      const elementOffset = getOffsetEl(element).top;
+      const elementIndex = 4;
+
+      let pointElement = document.documentElement.clientHeight - elementHeight / elementIndex;
+
+      if (window.scrollY >  elementOffset - pointElement) {
+         element.classList.add('show');
+      } 
+   });
+}
+
+function getOffsetEl(el) {
+   const rect = el.getBoundingClientRect(),
+      scrollTop = window.pageYOffset;
+
+   return { top: rect.top + scrollTop };
+
+}
+
+
+
+
+
+
+
+

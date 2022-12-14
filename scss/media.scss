@@ -3,148 +3,149 @@
 
 .header__inner {
 
-   @include _565 {
-      padding: 20px 15px;
+	@include _565 {
+		padding: 20px 15px;
 
-   }
+	}
 
-   & .nav {
-      @include _1100 {
-         display: none;
+	& .nav {
+		@include _1100 {
+			display: none;
 
-      }
-   }
+		}
+	}
 
-   & .button__mobile {
-      @include _1100 {
-         display: flex;
+	& .button__mobile {
+		@include _1100 {
+			display: flex;
 
-      }
-   }
+		}
+	}
 
-   & .nav__mobile {
-      @include _565 {
-         padding: 60px 0px;
-         width: 100%;
+	& .nav__mobile {
+		@include _565 {
+			padding: 60px 0px;
+			width: 100%;
 
-         & .nav__list {
-            align-items: center;
-         }
+			& .nav__list {
+				align-items: center;
+			}
 
-         & .nav__list__link {
-            position: relative;
+			& .nav__list__link {
+				position: relative;
 
-            &::after {
-               content: '';
-               position: absolute;
-               background: url(../img/welcome/leafs/leaf-title-1.png);
-               top: -8px;
-               left: -53px;
-               width: 52px;
-               height: 43px;
-            }
-         }
+				&::after {
+					content: '';
+					position: absolute;
+					background: url(../img/welcome/leafs/leaf-title-1.png);
+					top: -8px;
+					left: -53px;
+					width: 52px;
+					height: 43px;
+				}
+			}
 
-      }
-   }
+		}
+	}
 
-   & .header__social {
-      @include _1100 {
-         display: none;
+	& .header__social {
+		@include _1100 {
+			display: none;
 
-      }
-   }
+		}
+	}
 
 }
 
 //Welcome 
 
 .welcome {
-   @include _565 {
-      padding-bottom: 50px;
-   }
+	@include _565 {
+		padding-bottom: 50px;
+	}
 
-   &:after {
-      height: 70px;
-   }
+	&:after {
+		height: 70px;
+	}
 }
 
 .welcome__content {
 
-   @include _565 {
-      padding: 0px;
-      margin-bottom: 14px;
-   }
+	@include _565 {
+		padding: 0px;
+		margin-bottom: 14px;
+	}
 
-   &__title {
-      @include _565 {
-         font-size: 24px;
-         font-weight: 100;
-         line-height: 20px;
-         margin-bottom: 0;
-      }
+	&__title {
+		@include _565 {
+			font-size: 24px;
+			font-weight: 100;
+			line-height: 20px;
+			margin-bottom: 0;
+		}
 
-      @include _412 {
-         &::after {
-            display: none;
-         }
-      }
-   }
+		@include _412 {
+			&::after {
+				display: none;
+			}
+		}
+	}
 
-   &__title-main {
-      @include _565 {
-         margin-bottom: 0px;
+	&__title-main {
+		@include _565 {
+			margin-bottom: 0px;
 
-         &::after {
-            display: none;
-         }
+			&::after {
+				display: none;
+			}
 
-         &::before {
-            display: none;
-         }
-      }
-   }
+			&::before {
+				display: none;
+			}
+		}
+	}
 
-   &__subtitle {
-      @include _565 {
-         font-size: 24px;
-         line-height: 30px;
-         text-align: center;
-         margin-bottom: 5px;
-      }
-   }
+	&__subtitle {
+		@include _565 {
+			font-size: 24px;
+			line-height: 30px;
+			text-align: center;
+			margin-bottom: 5px;
+		}
+	}
 
-   &__text {
-      @include _565 {
-         font-size: 20px;
-         line-height: 32px;
-         margin-bottom: 20px;
-      }
+	&__text {
+		@include _565 {
+			font-size: 20px;
+			line-height: 32px;
+			margin-bottom: 20px;
+		}
 
-   }
+	}
 }
 
 .welcome__subcontent {
 
-   @include _565 {
-      max-width: 410px;
-   }
+	@include _565 {
+		max-width: 343px;
+		margin: 0 auto;
+	}
 
-   &__title {
-      @include _700 {
+	&__title {
+		@include _700 {
 
-         &::after {
-            display: none;
-         }
-      }
+			&::after {
+				display: none;
+			}
+		}
 
-      @include _565 {
-         max-width: 410px;
-         margin-bottom: 5px;
+		@include _565 {
+			max-width: 410px;
+			margin-bottom: 5px;
 
-      }
+		}
 
-   }
+	}
 
 
 
@@ -156,199 +157,201 @@
 
 
 .sequoia__body {
-   @include _1100 {
-      padding: 40px 50px;
+	@include _1100 {
+		padding: 40px 50px;
 
-      &__img {
-         width: 327px;
-         height: 494px;
-         top: -31%;
-      }
-   }
+		&__img {
+			width: 327px;
+			height: 494px;
+			top: -31%;
+		}
+	}
 
-   @include _870 {
-      &__img {
-         width: 271px;
-         height: 462px;
-         top: -23%;
-         left: 34%;
-      }
+	@include _870 {
+		&__img {
+			width: 271px;
+			height: 462px;
+			top: -23%;
+			left: 34%;
+		}
 
-   }
+	}
 
-   @include _780 {
-      flex-direction: column;
-      margin-bottom: 25px;
+	@include _780 {
+		flex-direction: column;
+		margin-bottom: 25px;
 
-      &__img {
-         display: none;
+		&__img {
+			display: none;
 
-      }
+		}
 
-   }
+	}
 
-   @include _565 {
-      padding: 20px 15px;
-   }
+	@include _565 {
+		padding: 20px 15px;
+	}
 
 }
 
 .sequoia__info {
 
-   @include _995 {
+	@include _995 {
 
-      &__title {
-         font-size: 48px;
-         line-height: 45px;
+		&__title {
+			font-size: 48px;
+			line-height: 45px;
 
-         &::after {
-            top: 39px;
-            left: 6px;
-         }
-      }
-   }
+			&::after {
+				top: 39px;
+				left: 6px;
+			}
+		}
+	}
 
-   @include _780 {
-      margin-bottom: 20px;
+	@include _780 {
+		margin-bottom: 20px;
 
-      &__subtitle {
-         margin-bottom: 15px;
-         margin-left: 0;
-         max-width: 100%;
-      }
+		&__subtitle {
+			margin-bottom: 15px;
+			margin-left: 0;
+			max-width: 100%;
+		}
 
-      &__title {
-         font-size: 30px;
-         line-height: 20px;
-         margin: 0 auto;
-         
+		&__title {
+			font-size: 30px;
+			line-height: 20px;
+			margin: 0 auto;
+			text-align: center;
 
-         &::after {
-            display: none;
-         }
 
-      }
-   }
+			&::after {
+				display: none;
+			}
 
-   @include _565 {
+		}
+	}
 
-      &__title {
-         font-size: 30px;
-      }
-   }
+	@include _565 {
 
-   @include _412 {
+		&__title {
+			font-size: 30px;
+		}
+	}
 
-      &__subtitle {
-         margin-bottom: 5px;
-      }
+	@include _412 {
 
-      &__title {
-         font-size: 28px;
-         line-height: 35px;
-      }
+		&__subtitle {
+			margin-bottom: 5px;
+			font-size: 30px;
+		}
 
-   }
+		&__title {
+			font-size: 28px;
+			line-height: 35px;
+		}
+
+	}
 
 }
 
 .sequoia__subscribe {
-   @include _780 {
-      max-width: 500px;
-      text-align: center;
+	@include _780 {
+		max-width: 500px;
+		text-align: center;
 
-      &::after {
-         top: 60px;
-         right: 49px;
-         transform: rotate(60deg);
-      }
+		&::after {
+			top: 60px;
+			right: 49px;
+			transform: rotate(60deg);
+		}
 
-      &__title {
-         text-align: center;
-      }
+		&__title {
+			text-align: center;
+		}
 
-      &__btn {
-         margin: 0 auto;
-      }
+		&__btn {
+			margin: 0 auto;
+		}
 
-   }
+	}
 
-   @include _565 {
-      max-width: 100%;
+	@include _565 {
+		max-width: 100%;
 
-      &::after {
-         display: none;
-      }
+		&::after {
+			display: none;
+		}
 
-      &__title {
-         font-size: 20px;
-         line-height: 25px;
-      }
+		&__title {
+			font-size: 20px;
+			line-height: 25px;
+		}
 
-   }
+	}
 
 
 
 }
 
 .sequoia__content {
-   @include _780 {
-      & .sequoia__items {
-         grid-template-columns: repeat(1, 1fr);
-         margin-bottom: 30px;
-      }
+	@include _780 {
+		& .sequoia__items {
+			grid-template-columns: repeat(1, 1fr);
+			margin-bottom: 30px;
+		}
 
-      & .sequoia__item {
-         padding: 32px 24px;
-      }
-   }
+		& .sequoia__item {
+			padding: 32px 24px;
+		}
+	}
 
-   @include _565 {
+	@include _565 {
 
-      &__title {
-         font-size: 35px;
-         line-height: 35px;
-      }
+		&__title {
+			font-size: 35px;
+			line-height: 35px;
+		}
 
-      & .sequoia__item {
-         padding: 24px 18px;
-      }
-   }
+		& .sequoia__item {
+			padding: 24px 18px;
+		}
+	}
 }
 
 //Purchasing 
 
 .purchasing {
 
-   @include _780 {
-      margin-bottom: 40px;
+	@include _780 {
+		margin-bottom: 40px;
 
-      &__title {
-         font-size: 40px;
-         margin-bottom: 20px;
+		&__title {
+			font-size: 40px;
+			margin-bottom: 20px;
 
-         &::before {
-            display: none;
-         }
-      }
+			&::before {
+				display: none;
+			}
+		}
 
-      &__items {
-         grid-template-columns: repeat(2, 1fr);
+		&__items {
+			grid-template-columns: repeat(2, 1fr);
 
-      }
-   }
+		}
+	}
 
-   @include _565 {
-      &__items {
+	@include _565 {
+		&__items {
 
-         grid-template-columns: repeat(1, 1fr);
+			grid-template-columns: repeat(1, 1fr);
 
-         & .purchasing__item {
-            background-color: #191D2E;
-            padding: 24px 18px;
-         }
-      }
-   }
+			& .purchasing__item {
+				background-color: #191D2E;
+				padding: 24px 18px;
+			}
+		}
+	}
 
 
 }
@@ -358,98 +361,98 @@
 
 .calc__top {
 
-   @include _870 {
-      flex-direction: column;
-      row-gap: 20px;
+	@include _870 {
+		flex-direction: column;
+		row-gap: 20px;
 
 
-      &__title {
+		&__title {
 
-         &::after {
-            content: '';
-            position: absolute;
-            background: url(../img/sequoia/Right\ arrow.svg) no-repeat;
-            width: 23px;
-            height: 93px;
-            top: 63px;
-            right: 33px;
-            transform: rotate(42deg);
-         }
-      }
+			&::after {
+				content: '';
+				position: absolute;
+				background: url(../img/sequoia/Right\ arrow.svg) no-repeat;
+				width: 23px;
+				height: 93px;
+				top: 63px;
+				right: 33px;
+				transform: rotate(42deg);
+			}
+		}
 
-      & .formula__title {
-         padding: 10px;
-         border: 2px solid #C2E978;
-         border-radius: 20px;
+		& .formula__title {
+			padding: 10px;
+			border: 2px solid #C2E978;
+			border-radius: 20px;
 
-      }
-   }
+		}
+	}
 
-   @include _565 {
+	@include _565 {
 
-      &__title {
-         font-size: 35px;
-         line-height: 37px;
+		&__title {
+			font-size: 35px;
+			line-height: 37px;
 
-         &::after {
-            display: none;
-         }
-      }
-   }
+			&::after {
+				display: none;
+			}
+		}
+	}
 }
 
 .calc__body {
 
-   @include _1100 {
-      padding: 30px 0px;
-      flex-wrap: wrap;
-      justify-content: center;
+	@include _1100 {
+		padding: 30px 10px;
+		flex-wrap: wrap;
+		justify-content: center;
 
 
-      &__btn {
-         max-width: 277px;
-         margin-left: 0;
-         padding: 30px;
-      }
+		&__btn {
+			max-width: 277px;
+			margin-left: 0;
+			padding: 30px;
+		}
 
-   }
+	}
 
-   @include _780 {
-      flex-direction: column;
-      row-gap: 20px;
+	@include _780 {
+		flex-direction: column;
+		row-gap: 20px;
 
-      &__375 {
-         margin-left: -40px;
-      }
+		&__375 {
+			margin-left: -40px;
+		}
 
-      &__btn {
-         padding: 30px 80px;
-         flex: 50px;
-      }
-   }
+		&__btn {
+			padding: 30px 80px;
+			flex: 50px;
+		}
+	}
 }
 
 .calc__bottom {
-   @include _1100 {
-      margin-bottom: 80px;
+	@include _1100 {
+		margin-bottom: 80px;
 
-   }
+	}
 
-   @include _780 {
-      margin-bottom: 50px;
+	@include _780 {
+		margin-bottom: 50px;
 
-   }
+	}
 
-   @include _412 {
-      &__item {
-         justify-content: start;
-         align-items: flex-start;
+	@include _412 {
+		&__item {
+			justify-content: start;
+			align-items: flex-start;
 
-         & .calc__bottom__text {
-            text-align: left;
-         }
-      }
-   }
+			& .calc__bottom__text {
+				text-align: left;
+			}
+		}
+	}
 }
 
 
@@ -458,19 +461,19 @@
 
 .classic {
 
-   @include _1100 {
-      margin-bottom: 80px;
+	@include _1100 {
+		margin-bottom: 80px;
 
-      &__btn {
-         padding: 20px 14px;
-         letter-spacing: 0.04em;
-      }
+		&__btn {
+			padding: 20px 14px;
+			letter-spacing: 0.04em;
+		}
 
-   }
+	}
 
-   @include _700 {
-      margin-bottom: 40px;
-   }
+	@include _700 {
+		margin-bottom: 40px;
+	}
 
 
 
@@ -478,84 +481,84 @@
 
 
 .classic__info {
-   @include _1100 {
-      margin-bottom: 30px;
-      padding: 0px 40px;
+	@include _1100 {
+		margin-bottom: 30px;
+		padding: 0px 40px;
 
-      &__text {
-         max-width: 610px;
-      }
+		&__text {
+			max-width: 610px;
+		}
 
-   }
+	}
 
-   @include _870 {
-      flex-direction: column;
-      row-gap: 20px;
+	@include _870 {
+		flex-direction: column;
+		row-gap: 20px;
 
-      &__title {
-         max-width: 100%;
+		&__title {
+			max-width: 100%;
 
-         &::after {
-            display: none;
-         }
+			&::after {
+				display: none;
+			}
 
-         &::before {
-            content: '';
-            position: absolute;
-            background: url(../img/classic/star__icon.svg ) no-repeat;
-            width: 13px;
-            height: 13px;
-            top: -6px;
-            left: -10px;
-         }
+			&::before {
+				content: '';
+				position: absolute;
+				background: url(../img/classic/star__icon.svg ) no-repeat;
+				width: 13px;
+				height: 13px;
+				top: -6px;
+				left: -10px;
+			}
 
-         & span {
-            color: $mainColor;
-            margin-left: 0;
-         }
-      }
+			& span {
+				color: $mainColor;
+				margin-left: 0;
+			}
+		}
 
-      &__text {
-         max-width: 100%;
-         text-align: center;
-      }
-   }
+		&__text {
+			max-width: 100%;
+			text-align: center;
+		}
+	}
 
-   @include _780 {
-      margin-bottom: 20px;
-      padding: 0px 15px;
+	@include _780 {
+		margin-bottom: 20px;
+		padding: 0px 15px;
 
-   }
+	}
 
 
-   @include _565 {
-      padding: 0px;
+	@include _565 {
+		padding: 0px;
 
-      &__title {
-         font-size: 45px;
+		&__title {
+			font-size: 45px;
 
-      }
-   }
+		}
+	}
 
-   @include _412 {
-      &__title {
-         font-size: 35px;
-      }
-   }
+	@include _412 {
+		&__title {
+			font-size: 35px;
+		}
+	}
 
 }
 
 .classic__items {
 
-   @include _700 {
-      flex-direction: column;
-      padding: 0px 40px;
+	@include _700 {
+		flex-direction: column;
+		padding: 0px 40px;
 
-   }
+	}
 
-   @include _412 {
-      margin-bottom: 11px;
-   }
+	@include _412 {
+		margin-bottom: 11px;
+	}
 
 }
 
@@ -564,81 +567,81 @@
 // Airdrop
 
 .airdrop {
-   @include _565 {
-      margin-bottom: 50px;
+	@include _565 {
+		margin-bottom: 50px;
 
-      &__subtitle {
-         margin-bottom: 75px;
+		&__subtitle {
+			margin-bottom: 75px;
 
-      }
-   }
+		}
+	}
 
 }
 
 .airdrop__items {
-   @include _1100 {
-      padding: 0px 0px 0px 40px;
-   }
+	@include _1100 {
+		padding: 0px 0px 0px 40px;
+	}
 
-   @include _995 {
-      justify-content: center;
-      grid-template-columns: repeat(2, 250px);
-      gap: 70px 0px;
-      padding: 0px;
+	@include _995 {
+		justify-content: center;
+		grid-template-columns: repeat(2, 250px);
+		gap: 70px 0px;
+		padding: 0px;
 
-      & .airdrop__item {
+		& .airdrop__item {
 
-         &__img--green {
+			&__img--green {
 
-            &::before {
-               display: none;
-            }
+				&::before {
+					display: none;
+				}
 
-            &+.airdrop__item__text {
-               font-size: 32px;
-            }
-         }
+				&+.airdrop__item__text {
+					font-size: 32px;
+				}
+			}
 
-         &__img--orange {
+			&__img--orange {
 
-            &::before {
-               display: none;
-            }
-         }
+				&::before {
+					display: none;
+				}
+			}
 
-         &__img--pink {
+			&__img--pink {
 
-            &::before {
-               display: none;
-            }
+				&::before {
+					display: none;
+				}
 
-            &+.airdrop__item__text {
-               font-size: 32px;
-               line-height: 12px;
-            }
-         }
+				&+.airdrop__item__text {
+					font-size: 32px;
+					line-height: 12px;
+				}
+			}
 
-         &__img--white {
-            &+.airdrop__item__text {
-               font-size: 32px;
-            }
-         }
-      }
+			&__img--white {
+				&+.airdrop__item__text {
+					font-size: 32px;
+				}
+			}
+		}
 
-   }
+	}
 
-   @include _565 {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 70px 0px;
+	@include _565 {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 70px 0px;
 
 
-      & .airdrop__item:nth-child(4),
-      .airdrop__item:nth-child(2),
-      .airdrop__item:nth-child(1) {
-         row-gap: 60px;
-      }
+		& .airdrop__item:nth-child(4),
+		.airdrop__item:nth-child(2),
+		.airdrop__item:nth-child(1) {
+			row-gap: 60px;
+		}
 
-   }
+	}
 
 
 }
@@ -651,73 +654,73 @@
 //Tokenomics
 
 .tokenomics {
-   @include _1100 {
-      &__wrapper {
-         padding: 40px 20px;
-      }
-   }
+	@include _1100 {
+		&__wrapper {
+			padding: 40px 20px;
+		}
+	}
 
-   @include _780 {
-      margin-bottom: 40px;
+	@include _780 {
+		margin-bottom: 40px;
 
-      &__wrapper {
-         padding: 40px 20px;
-         flex-direction: column;
-      }
+		&__wrapper {
+			padding: 40px 20px;
+			flex-direction: column;
+		}
 
-      &__title {
-         max-width: 300px;
-         margin: 0 auto;
+		&__title {
+			max-width: 300px;
+			margin: 0 auto;
 
-      }
-   }
+		}
+	}
 
-   @include _565 {
+	@include _565 {
 
-      &__wrapper {
-         padding: 30px 20px;
-         margin: 0px -15px;
-      }
+		&__wrapper {
+			padding: 30px 20px;
+			margin: 0px -15px;
+		}
 
-      &__title {
-         font-size: 42px;
-         line-height: 30px;
+		&__title {
+			font-size: 42px;
+			line-height: 30px;
 
-      }
+		}
 
-   }
+	}
 
 
 }
 
 .tokenomics__info {
 
-   @include _565 {
-      &__list {
-         margin: 20px 0px;
+	@include _565 {
+		&__list {
+			margin: 20px 0px;
 
-         &-item {
-            align-items: flex-start;
-         }
-      }
-   }
+			&-item {
+				align-items: flex-start;
+			}
+		}
+	}
 }
 
 
 //Roadmap
 
 .roadmap {
-   @include _995 {
-      padding-top: 0;
-   }
+	@include _995 {
+		padding-top: 0;
+	}
 
-   @include _565 {
-      margin-bottom: 76px;
+	@include _565 {
+		margin-bottom: 76px;
 
-      &__title {
-         font-size: 42px;
-      }
-   }
+		&__title {
+			font-size: 42px;
+		}
+	}
 
 
 
@@ -726,79 +729,99 @@
 
 .roadmap__slider {
 
-   @include _995 {
-      .slide {
-         padding: 20px 15px;
-         background-color: #191D2E;
-         color: #7E839A;
+	@include _995 {
+		.slide {
+			padding: 20px 20px 20px 25px;
+			background-color: #191D2E;
+			color: #7E839A;
 
-         &__icon {
-            margin-bottom: 12px;
-         }
-      }
-   }
+			&__icon {
+				margin-bottom: 12px;
+			}
 
-   @include _565 {
+			&__descr {
+				font-size: 18px;
+			}
+		}
+	}
 
-      .slide {
-         padding: 32px 20px 30px 24px;
 
-         &__icon {
-            margin-bottom: 12px;
-         }
-      }
+	@include _870 {
+		.slide {
+			&__descr {
+				font-size: 18px;
+			}
+		}
+	}
 
-      & .slick-dots {
-         column-gap: 20px;
-      }
-   }
+	@include _565 {
 
-   @include _412 {
+		.slide {
+			padding: 32px 20px 30px 24px;
 
-      .slide {
-         padding: 15px 20px;
+			&__icon {
+				margin-bottom: 12px;
+			}
 
-         &__icon {
-            margin-bottom: 12px;
-         }
-      }
+			&__descr {
+				font-size: 20px;
+			}
 
-      & .slick-dots {
-         column-gap: 20px;
-      }
-   }
+
+		}
+
+		& .slick-dots {
+			column-gap: 0px;
+
+			& li {
+				width: 13px;
+				height: 13px;
+			}
+		}
+	}
+
+	@include _412 {
+
+		.slide {
+			padding: 15px 20px;
+
+			&__icon {
+				margin-bottom: 12px;
+			}
+		}
+	}
 
 }
 
 //Team
 
 .team {
-   @include _1100 {
-      margin-bottom: 50px;
+	@include _1100 {
+		margin-bottom: 50px;
 
-      &__title {
-         line-height: 36px;
-         margin-bottom: 25px;
-      }
+		&__title {
+			line-height: 36px;
+			margin-bottom: 25px;
+		}
 
-      &__items {
-         display: flex;
-         flex-wrap: wrap;
-         column-gap: 19px;
+		&__items {
+			display: flex;
+			flex-wrap: wrap;
+			column-gap: 19px;
 
-      }
-   }
+		}
+	}
 
 }
 
 .team__item {
-   @include _1100 {
-      flex: 270px;
-   }
+	@include _1100 {
+		flex: 270px;
+	}
 
-   @include _412 {
-      flex: auto;
-   }
+	@include _412 {
+		flex: auto;
+	}
 
 }
 
@@ -806,60 +829,57 @@
 //Footer
 
 .footer {
-   @include _1100 {
-      &__wrapper {
-         padding: 20px 50px;
-         margin-bottom: 50px;
+	@include _1100 {
+		&__wrapper {
+			padding: 20px 50px;
+			margin-bottom: 50px;
 
-      }
-   }
+		}
+	}
 
-   @include _995 {
-      &__img {
-         display: none;
-      }
+	@include _995 {
+		&__img {
+			display: none;
+		}
 
-   }
+	}
 
-   @include _870 {
-      &__wrapper {
-         padding: 20px 30px;
+	@include _870 {
+		&__wrapper {
+			padding: 20px 30px;
 
-      }
+		}
 
-      &__social {
-         column-gap: 40px;
-      }
+		&__social {
+			column-gap: 40px;
+		}
 
-   }
+	}
 
-   @include _700 {
-      &__wrapper {
-         flex-direction: column;
-         padding: 20px;
-         margin-bottom: 30px;
-         min-height: 170px;
-      }
+	@include _700 {
+		&__wrapper {
+			flex-direction: column;
+			padding: 20px;
+			margin-bottom: 30px;
+			min-height: 170px;
+		}
 
-      &__title {
-         font-size: 40px;
-         line-height: 45px;
-         max-width: 100%;
-      }
-   }
+		&__title {
+			font-size: 40px;
+			line-height: 45px;
+			max-width: 100%;
+		}
+	}
 
-   @include _565 {
-      &__title {
-         max-width: 276px;
-      }
+	@include _565 {
+		&__title {
+			max-width: 276px;
+		}
 
-      &__copy {
-         &:after {
-            display: none;
-         }
-
-      }
-   }
-
-
+		&__copy {
+			&:after {
+				display: none;
+			}
+		}
+	}
 }

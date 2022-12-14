@@ -1,6 +1,6 @@
 @import './reset';
 @import './vars';
-@import './global';
+
 
 
 //                                                       ****Blocks****
@@ -219,6 +219,9 @@
    &__title-main {
       margin-bottom: 8px;
       position: relative;
+      transform: translateY(-70%);
+      transition: all 0.8s ease-in-out;
+      opacity: 0;
 
 
       & svg {
@@ -291,6 +294,9 @@
    &__title {
       position: relative;
       margin-bottom: 12px;
+      transform: translateX(-50%);
+      transition: all 0.8s ease-in-out 0.3s;
+      opacity: 0;
 
       span {
          color: $mainColor;
@@ -343,6 +349,9 @@
 
 .sequoia__info {
    text-align: left;
+   transform: translateX(-50%);
+   transition: all 0.8s ease-in-out 0.3s;
+   opacity: 0;
 
    &__subtitle {
       margin-left: -20px;
@@ -485,6 +494,44 @@
    & .purchasing__item {
       background-color: #191D2E;
       padding: 32px 24px;
+      transform: translateY(-50%);
+      opacity: 0;
+
+      &:nth-child(1) {
+         transform: translate(-50%, -50%);
+         transition: all 0.8s ease-in-out 0.1s;
+
+      }
+
+      &:nth-child(2) {
+         transform: translateY(-50%);
+         transition: all 0.8s ease-in-out 0.3s;
+
+      }
+
+      &:nth-child(3) {
+         transform: translate(50%, -50%);
+         transition: all 0.8s ease-in-out 0.5s;
+
+      }
+
+      &:nth-child(4) {
+         transform: translateX(50%);
+         transition: all 0.8s ease-in-out 0.7s;
+
+      }
+
+      &:nth-child(5) {
+         transform: translateX(50%);
+         transition: all 0.8s ease-in-out 0.7s;
+
+      }
+
+      &:nth-child(6) {
+         transform: translateX(50%);
+         transition: all 0.8s ease-in-out 0.7s;
+
+      }
 
       &__img {
          margin-bottom: 12px;
@@ -547,15 +594,14 @@
             position: absolute;
             background: url(../img/calc/MainLine__formula.svg) no-repeat;
             width: 266px;
-            height: 20px;
+            height: 5px;
             top: 46%;
             left: 0;
-            transform: translateY(-50%, 50%);
          }
 
          & span {
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 15px;
          }
       }
    }
@@ -581,6 +627,9 @@
 
       & .calc__body__013 {
          margin-bottom: 10px;
+         opacity: 0;
+         transform: scale(1.9);
+         transition: all 1s ease-in-out;
       }
    }
 
@@ -764,7 +813,6 @@
       font-weight: 100;
 
 
-
       &__img--green {
          color: #00DB2C;
          font-size: 48px;
@@ -791,6 +839,7 @@
             height: 20px;
             top: 9px;
             left: 103px;
+            
          }
 
          &+.airdrop__item__text {
@@ -974,9 +1023,10 @@
 .roadmap {
    padding-top: 74px;
    margin-bottom: 107px;
+   position: relative;
 
    & .container {
-      padding: 0px 20px;
+      padding: 0px 30px;
    }
 
    &::after {
@@ -1145,6 +1195,8 @@
 
    &__img {
       margin: 0px auto 20px auto;
+      opacity: 0;
+
    }
 
    &__name {
@@ -1161,6 +1213,47 @@
       font-size: 15px;
       line-height: 24px;
       color: #888D9D;
+   }
+
+   &:nth-child(1) {
+      & .team__item__img {
+         transform: scale(1.2);
+         transition: all 0.8s ease-in-out 0.1s;
+      }
+   }
+
+   &:nth-child(2) {
+
+      & .team__item__img {
+         transform: scale(1.2);
+         transition: all 0.8s ease-in-out 0.3s;
+      }
+      
+   }
+
+   &:nth-child(3) {
+      & .team__item__img {
+         transform: scale(1.2);
+         transition: all 0.8s ease-in-out 0.5s;
+      }
+   }
+
+   &:nth-child(4) {
+
+      & .team__item__img {
+         transform: scale(1.2);
+         transition: all 0.8s ease-in-out 0.7s;
+      }
+      
+   }
+
+   &:nth-child(5) {
+
+      & .team__item__img {
+         transform: scale(1.2);
+         transition: all 0.8s ease-in-out 0.9s;
+      }
+      
    }
 }
 
@@ -1300,3 +1393,4 @@
 
 
 @import '../scss/media.scss';
+@import './global';
