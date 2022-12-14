@@ -995,15 +995,15 @@ button {
   100% {
     transform: rotate(0deg);
     bottom: -113px; } }
-@media (max-width: 565px) {
-  .header__inner {
-    padding: 20px 15px; } }
 @media (max-width: 1130px) {
   .header__inner .nav {
     display: none; } }
 @media (max-width: 1130px) {
   .header__inner .button__mobile {
     display: flex; } }
+@media (max-width: 565px) {
+  .header__inner {
+    padding: 20px 15px; } }
 @media (max-width: 565px) {
   .header__inner .nav__mobile {
     padding: 60px 0px;
@@ -1102,7 +1102,7 @@ button {
     font-size: 48px;
     line-height: 45px; }
     .sequoia__info__title::after {
-      top: 39px;
+      top: 15px;
       left: 6px; } }
 @media (max-width: 780px) {
   .sequoia__info {
@@ -1450,7 +1450,7 @@ button {
   font-style: normal; }
 @font-face {
   font-family: 'Stone Soup NF W01 Regular';
-  src: local("Stone Soup NF W01 Regular"), url("../font/d45c80def0773883403215fd11b988d3.woff2") format("woff2"), url("../font/d45c80def0773883403215fd11b988d3.woff") format("woff");
+  src: local("Stone Soup NF W01 Regular"), url("../font/Stone.woff2") format("woff2"), url("../font/Stone.woff") format("woff");
   font-weight: 400;
   font-style: normal; }
 html,

@@ -16,6 +16,8 @@ $('.roadmap__slider').slick({
    slidesToScroll: 4,
    arrows: true,
    dots: true,
+   autoplay: true,
+   autoplaySpeed: 4000,
    responsive: [
       {
          breakpoint: 1024,
@@ -49,23 +51,21 @@ const animationElements = document.querySelectorAll('._anim__el');
 if (animationElements.length > 0) {
 
    animateByScroll();
-
    window.addEventListener('scroll', animateByScroll);
-
-
 }
 
 function animateByScroll() {
    animationElements.forEach(element => {
       const elementHeight = element.clientHeight;
       const elementOffset = getOffsetEl(element).top;
+      console.log(window.innerHeight)
       const elementIndex = 4;
 
-      let pointElement = document.documentElement.clientHeight - elementHeight / elementIndex;
+      let pointElement = document.documentElement.clientHeight + elementHeight / elementIndex;
 
-      if (window.scrollY >  elementOffset - pointElement) {
+      if (window.scrollY > elementOffset - pointElement) {
          element.classList.add('show');
-      } 
+      }
    });
 }
 

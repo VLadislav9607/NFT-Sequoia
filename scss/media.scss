@@ -3,11 +3,6 @@
 
 .header__inner {
 
-	@include _565 {
-		padding: 20px 15px;
-
-	}
-
 	& .nav {
 		@include _1100 {
 			display: none;
@@ -21,6 +16,13 @@
 
 		}
 	}
+
+	@include _565 {
+		padding: 20px 15px;
+
+	}
+
+
 
 	& .nav__mobile {
 		@include _565 {
@@ -203,7 +205,7 @@
 			line-height: 45px;
 
 			&::after {
-				top: 39px;
+				top: 15px;
 				left: 6px;
 			}
 		}
